@@ -6,7 +6,7 @@ int main(){
     string name ;
     cin>>name;
     cout<<"Name :- "<< name;
-    name[3] = 'z';
+    name[3] = 'a';
     cout<<"\nName after Change :- "<< name;
     return 0;
 }
