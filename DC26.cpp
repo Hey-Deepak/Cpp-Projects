@@ -1,15 +1,16 @@
-class MyClass {        // The class
-  public:              // Access specifier
-    void myMethod();   // Method/function declaration
+#include <iostream>
+using namespace std;
+class MyClass
+{
+public:
+  void myMethod()
+  {
+    cout << "Hello World!";
+  };
 };
-
-// Method/function definition outside the class
-void MyClass::myMethod() {
-  cout << "Hello World!";
-}
-
-int main() {
-  MyClass myObj;     // Create an object of MyClass
-  myObj.myMethod();  // Call the method
+int main()
+{
+  MyClass myObj;
+  myObj.myMethod();
   return 0;
 }
