@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
-
-class Car {
-  public:
-    int speed(int maxSpeed);
+class MyClass
+{
+public:
+  void myMethod();
 };
-
-int Car::speed(int maxSpeed) {
-  return maxSpeed;
-}
-
-int main() {
-  Car myObj; 
-  cout << myObj.speed(200); 
+  void MyClass :: myMethod(){
+    cout << "Hello World!";
+  }
+int main()
+{
+  MyClass myObj;
+  myObj.myMethod();
   return 0;
 }
