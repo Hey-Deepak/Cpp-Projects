@@ -7,7 +7,7 @@ int main()
     int matrix[100][100];
 
     cout << "Enter Hight of N * N matrix" << endl;
-    cin >> n;
+    scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
     {
