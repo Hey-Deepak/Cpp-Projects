@@ -5,6 +5,7 @@ int main(){
     float firstInSem, secondInSem, finalSem, assignment, attendance;
     float total;
 
+
     cout<<"Enter your 1st or 3rd In-Sem Marks:-\n"<<endl;
     cin>>firstInSem;
     cout<<"Enter your 2nd or 3rd In-Sem Marks:-\n"<<endl;
