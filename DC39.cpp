@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main() 
 {
     int n;
     int matrix[100][100];
