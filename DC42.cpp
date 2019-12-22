@@ -14,5 +14,4 @@ void swap(int x,int y){
     x = y;
     y = temp;
     cout << x << y << endl;
-    
 }
