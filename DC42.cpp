@@ -1,19 +1,18 @@
 #include<iostream>
 using namespace std;
-void strcpy(int* arr1, int *arr2);
+void swap(int x,int y);
 
 int main(){
-    int arr1[] = {1, 2, 3, 4, 5,6, 7, 8};
-    int arr2[];
-
-   
-    
+    int a = 4, b = 8;
+    swap(a, b);
+    cout << a << b << endl;
     return 0;
 }
-void strcpy(int *arr1, int *arr2){
-    if ((*arr2 = *arr1) != '\0')
-    {
-        
-    }
+void swap(int x,int y){
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+    cout << x << y << endl;
     
 }
