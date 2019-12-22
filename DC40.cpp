@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
     int n1rows, n2column, m1rows, m2column, j, sum = 0;
     int matrix1[100][100];
     int matrix2[100][100];
