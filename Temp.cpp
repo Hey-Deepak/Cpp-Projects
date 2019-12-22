@@ -11,7 +11,7 @@ int main()
         n/=10;
         count++;
     }
-    n=t;// obtaining the original value of n
+    n=t;
     while(n>0)
     {
         r=n%10;
