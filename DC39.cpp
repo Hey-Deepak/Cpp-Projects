@@ -2,8 +2,7 @@
 using namespace std;
 
 int main() 
-{   
-    int n;
+{   int n;
     int matrix[100][100];
 
     cout << "Enter Hight of N * N matrix" << endl;
