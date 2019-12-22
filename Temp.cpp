@@ -5,7 +5,7 @@ int main()
     int n,count=0,r,t,sum=0;
     printf("Enter the number");
     scanf("%d",&n);
-    t=n;//copy n to another variable
+    t=n;
     while(n>0)
     {
         n/=10;
