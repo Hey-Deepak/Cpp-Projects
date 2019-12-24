@@ -11,15 +11,10 @@ int main(){
 }
 int strcmp(int* pa, int* pb){
     
-    while (*pb++ == *pa++)
-    {
-        if (*pb == '\0')
-        {
+    while (*pb++ == *pa++){
+        if (*pb == '\0'){
             return 1;
         }
-        
     }
-    cout << *pb << endl;
-    cout << *pa << endl;
     return *(--pa) - *(--pb);
 }
