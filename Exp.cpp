@@ -11,12 +11,12 @@ int main(){
     {
         cout << "1" << endl;
     }
-    else if( 96 > ch || ch < 123)
+    else if( 96 > ch || ch < 123)    
     {
         cout << "0" << endl;
     }else
     {
-        cout << "-1" << endl;
+        cout << "-1" << endl;    // Bug
     }
     return 0;
 }
