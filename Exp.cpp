@@ -18,7 +18,5 @@ int main(){
     {
         cout << "-1" << endl;    // Bug
     }
-
-    vnksnfvsnfsnfsk.fnsfjsfjsjfsljfslfkjsgjslfjsjs
     return 0;
 }
