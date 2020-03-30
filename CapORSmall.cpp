@@ -18,8 +18,5 @@ int main(){
     {
         cout << "-1" << endl;    // Bug
     }
-
-
-    exp do not take it serious.
     return 0;
 }
