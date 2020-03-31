@@ -1,25 +1,11 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
+    int x;
 
-    char ch;
-    cin >> ch;
+    scanf("%d", &x);
+    printf("\n%d", x);
     
-    printf("%d\n", ch);
-    if (64 > ch || ch < 91)
-    {
-        cout << "1" << endl;
-    }
-    else if( 96 > ch || ch < 123)    
-    {
-        cout << "0" << endl;
-    }else
-    {
-        cout << "-1" << endl;    // Bug
-    }
-
-
-    exp do not take it serious.
     return 0;
 }
