@@ -1,10 +1,14 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include <iostream> 
 
-int main(){
-    int val=3;
-    int *ptr=&val;
-    
-    printf("%d %d", *ptr, ++val) ;
-    return 0;
+int main() 
+{ 
+	int a = 10; 
+	printf("\n %d %d", a, a++); 
+
+	a = 10; 
+	printf("\n %d %d", a++, a); 
+
+	a = 10; 
+	printf("\n %d %d %d ", a, a++, ++a); 
+	return 0; 
 }
