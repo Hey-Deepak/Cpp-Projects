@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <string.h
+#include <string.h>
 
 void read_string(char *s);
 void display_string(char *s);
-void merge_str(char *s,char *s1,char *s2);
-void copy_str(char *s,char *s1,int m,int n);
+void merge_str(char *s, char *s1, char *s2);
+void copy_str(char *s, char *s1, int m, int n);
 
 int main()
 {
-    char str[10],str1[100],merge_str2[250];
+    char str[10] = "Sample", str1[100], merge_str2[250];
     char copy_str1[100];
-    int n,m,a;
+    int n, m, a;
 
     printf("select anyone option:\n");
     printf("1.read string\n");
@@ -20,36 +20,37 @@ int main()
     printf("5.length of the string\n");
     printf("6.count upper case,lower case and numbers string\n");
 
-    scanf("%d",&a);
+    scanf("%d", &a);
+    fflush(stdin);
 
-    
-switch (a)
-{
-case 1:
-    printf("Here\n");
-    read_string(str);
-    break;
-case 2:
-     display_string(str);
-     break;      
-case 3:
+    switch ( a )
     {
+    case 1:
+        read_string(str);
+        display_string(str);
+        break;
+    case 2:
+        display_string(str);
+        break;
+    case 3:
+    {
+        read_string(str);
         read_string(str1);
-        merge_str(str,str1,merge_str2);
+        merge_str(str, str1, merge_str2);
     }
     break;
-case 4:
-{
-    printf("enter the values of m and n:");
-    scanf("%d %d",&m,&n);
+    case 4:
+    {
+        printf("enter the values of m and n:");
+        scanf("%d %d", &m, &n);
 
-    copy_str(str,copy_str1,m,n);
-}
-break;
-default:
-printf("select the valid option:");
+        copy_str(str, copy_str1, m, n);
+    }
     break;
-}
+    default:
+        printf("select the valid option:");
+        break;
+    }
 
     return 0;
 }
@@ -57,37 +58,37 @@ printf("select the valid option:");
 void read_string(char *s)
 {
     printf("enter the string\n");
-    gets(s);
-    puts(s);
-    printf("END");
+    fgets(s, 100, stdin);
+    
 }
 
 void display_string(char *s)
-{ 
+{
     printf("the string is:\n");
-    puts(s);
+    printf("%s", s);
 }
 
-void merge_str(char *s,char *s1,char *s2)
-{
-  strcpy(s2,s);
-  strcpy(s2,s1);
-  printf("after merging:\n");
+void merge_str(char *s, char *s1, char *s2)
+{  
+    strcat(s2, s);
+    strcat(s2, s1);
+    printf("after merging:\n");
+    printf("%s \n", s2);
 
-  display_string(s2);
+    display_string(s2);
 }
 
-void copy_str(char *s,char *s1,int m,int n)
+void copy_str(char *s, char *s1, int m, int n)
 {
-    int j=0;
-   read_string(s);
+    int j = 0;
+    read_string(s);
 
-    for (int i = n; i <m ; i++)
+    for (int i = n; i < m; i++)
     {
-        s1[j]=s[i];
+        s1[j] = s[i];
         j++;
     }
-    s1[j]='\0';
-printf("the copied string is:");
-    puts(s1);
+    s1[j] = '\0';
+    printf("the copied string is:");
+    printf("%s \n", s1);
 }
