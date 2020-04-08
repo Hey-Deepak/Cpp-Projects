@@ -1,21 +1,43 @@
+#include <bits/stdc++.h> 
+using namespace std;
 
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+class Node  { 
+public:
+    int data;
+    Node *next;
+};
 
-int main() {
-    // Declare a variable named 'input_string' to hold our input.
-    char input_string[105]; 
-    
-    // Read a full line of input from stdin and save it to our variable, input_string.
-    scanf("%[^\n]", input_string); 
-    
-    // Print a string literal saying "Hello, World." to stdout using printf.
-    printf("Hello, World.\n");
-    
-    // TODO: Write a line of code here that prints the contents of input_string to stdout.
-    printf("%s", input_string);
+int main(){
+    Node *head = NULL;
+    Node *second = NULL;
+    Node *third = NULL;
+    Node *four = NULL;
+
+    head = new Node();
+    second = new Node();
+    third = new Node();
+    four = new Node();
+
+    head ->data = 1;
+    head ->next = second;
+    second ->data = 2;
+    second ->next = third;
+    third ->data = 3;
+    third ->next = four;
+    four ->data = 4;
+    four ->next = NULL;
+
+    Node *temp = head ->next;
+
+    while (temp)
+    {   
+        if (temp)
+        {
+            return;
+        }
+        printf("%d\t", temp ->data);
+        temp = temp ->next;
+    }
     
     return 0;
 }
