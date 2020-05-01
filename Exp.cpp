@@ -1,43 +1,28 @@
 #include <bits/stdc++.h> 
 using namespace std;
 
-class Node  { 
-public:
-    int data;
-    Node *next;
-};
-
 int main(){
-    Node *head = NULL;
-    Node *second = NULL;
-    Node *third = NULL;
-    Node *four = NULL;
+    int array[] = {1, 4, 3, 5, 6, 7, 2, 3, 4, 5, 6, 7, 8, 9};
+    int temp = 1, count = 1;
+    int *p = array;
+    int *q = &array[1];
 
-    head = new Node();
-    second = new Node();
-    third = new Node();
-    four = new Node();
-
-    head ->data = 1;
-    head ->next = second;
-    second ->data = 2;
-    second ->next = third;
-    third ->data = 3;
-    third ->next = four;
-    four ->data = 4;
-    four ->next = NULL;
-
-    Node *temp = head ->next;
-
-    while (temp)
-    {   
-        if (temp)
+    for (int i = 0; array[i] ; i++)
+    {
+        *p = array[i];
+        *q = array[i  + 1];
+        if ((*q) == ++(*p))
+        {   
+            count++;
+        } else
         {
-            return;
+            if(temp < count){
+                temp = count;
+                count = 0;
+            }
         }
-        printf("%d\t", temp ->data);
-        temp = temp ->next;
     }
-    
+    cout << ((count > temp) ? count : temp)<< endl;
+
     return 0;
 }
