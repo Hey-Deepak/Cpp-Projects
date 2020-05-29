@@ -92,3 +92,12 @@ void copy_str(char *s, char *s1, int m, int n)
     printf("the copied string is:");
     printf("%s \n", s1);
 }
+
+
+#include<stdio.h>
+int main()
+{
+    printf("%as \n", );
+    return 0;  
+}
+
